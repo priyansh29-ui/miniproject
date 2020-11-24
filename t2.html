@@ -2,9 +2,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="https://priyanshagrawal29.github.io/miniproject/login.css">
+ <script>
+function passrecovery() {
+  var name= document.forms["form"]["uname"].value;
+  var mail= document.forms["form"]["umail"].value;
+  if(name==window.localStorage.getItem("name") && mail===window.localStorage.getItem("mail")){
+    document.write("your password is:"+window.localStorage.getItem("password"));
+  }else{
+    alert("You have entered wrong credentials please retry");
+
+}}
+</script>
 <head>
     <meta charset="UTF-8">
-    <script src="C:\Users\krishan sorout\AppData\Local\atom\app-1.53.0\lsf.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password recovery</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -29,10 +39,10 @@
             </div>
         </div>
         <div class="contents">
-            <form id="form">
+            <form id="form" name = "form" onsubmit="return passrecovery()" method="post">
                 <div class="inputs-holder">
-                    <input id="user" type="text" placeholder="Username" required>
-                    <input id="mail" class="email" type="email" placeholder="Email" required>
+                    <input id="user" name="uname" type="text" placeholder="Username" required>
+                    <input id="mail" name="umail" class="email" type="email" placeholder="Email" required>
                 </div>
                 <input type="submit" id="btn" value="Get password">
 <p><a href="https://priyanshagrawal29.github.io/miniproject/LOGIN.HTML">Sign in</a></p>
