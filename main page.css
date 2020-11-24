@@ -1,0 +1,73 @@
+body {
+  
+    color:#fff;
+    font-family: 'Balsamiq Sans', cursive;
+    background:linear-gradient(216deg, rgba(77, 77, 77, 0.05) 0%, rgba(77, 77, 77, 0.05) 25%, rgba(42, 42, 42, 0.05) 25%, rgba(42, 42, 42, 0.05) 38%, rgba(223, 223, 223, 0.05) 38%, rgba(223, 223, 223, 0.05) 75%, rgba(36, 36, 36, 0.05) 75%, rgba(36, 36, 36, 0.05) 100%), linear-gradient(44deg, rgba(128, 128, 128, 0.05) 0%, rgba(128, 128, 128, 0.05) 34%, rgba(212, 212, 212, 0.05) 34%, rgba(212, 212, 212, 0.05) 57%, rgba(25, 25, 25, 0.05) 57%, rgba(25, 25, 25, 0.05) 89%, rgba(135, 135, 135, 0.05) 89%, rgba(135, 135, 135, 0.05) 100%), linear-gradient(241deg, rgba(55, 55, 55, 0.05) 0%, rgba(55, 55, 55, 0.05) 14%, rgba(209, 209, 209, 0.05) 14%, rgba(209, 209, 209, 0.05) 60%, rgba(245, 245, 245, 0.05) 60%, rgba(245, 245, 245, 0.05) 69%, rgba(164, 164, 164, 0.05) 69%, rgba(164, 164, 164, 0.05) 100%), linear-gradient(249deg, rgba(248, 248, 248, 0.05) 0%, rgba(248, 248, 248, 0.05) 32%, rgba(148, 148, 148, 0.05) 32%, rgba(148, 148, 148, 0.05) 35%, rgba(202, 202, 202, 0.05) 35%, rgba(202, 202, 202, 0.05) 51%, rgba(181, 181, 181, 0.05) 51%, rgba(181, 181, 181, 0.05) 100%), linear-gradient(92deg, rgb(28, 28, 28), rgb(28, 28, 28));
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(https://www.incimages.com/uploaded_files/image/1920x1080/getty_883231284_200013331818843182490_335833.jpg);
+}
+
+.card{
+    position:relative ;
+    overflow:hidden ;
+    width:70%;
+    background:rgba(0, 0 , 0 , 0.2);
+    margin:10%;
+    padding:15px;
+    border-radius:2%;
+    background:linear-gradient(-70deg , rgb(224, 64, 251) , rgb(245, 0, 87));
+    background-size:100% ;
+    transition:all 0.4s ease-out;
+}
+.card:hover{
+    background-position: -50%;
+}
+.card img{
+    max-width:100%;
+    display:block ;
+    padding:0;
+    border-radius:50%;
+    transform-origin:top;
+    border:2px solid blue;
+    transition:all 0.5s ease-in-out;
+}
+.card:hover img{
+    transform:scale(0.5);
+}
+.card h1{
+  color: blue;
+    transition:all 0.7s linear;
+    text-align:center ;
+    transform:translateX(-150%);
+    padding:.5%;
+}
+.card:hover h1{
+    transform:translateX(0%);
+}
+.card .text{
+    position:absolute ;
+    left:0;
+    padding:2%;
+    color:#fff;
+    text-align:center ;
+    width:100%;
+    bottom:0;
+}
+.card h3{
+    text-align:center ;
+    transition:all 0.7s linear;
+    transform:translateX(150%);
+    padding-right:1%;
+    padding-top:0;
+}
+.card:hover h3{
+    transform:translateX(0%);
+}
+.addy{
+        min-height:90%;
+        min-width:90%;
+}
+.head{
+    text-align:center ;
+    text-transform:uppercase ;
+    text-shadow:4px 4px 2px rgba(0, 0, 0 , 0.6);
+}
