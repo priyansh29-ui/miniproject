@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="C:\Users\krishan sorout\AppData\Local\atom\app-1.53.0\login.css">
+<script>
+function signup() {
+var name= document.forms["form"]["uname"].value;
+var mail= document.forms["form"]["umail"].value;
+var pass= document.forms["form"]["upass"].value;
+window.localStorage.setItem("name",name);
+window.localStorage.setItem("mail",mail);
+window.localStorage.setItem("password",pass);
+alert("Sign up Successful");
+window.open("file:///C:/Users/krishan%20sorout/AppData/Local/atom/app-1.53.0/LOGIN.HTML")
+}
+</script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-holder">
+            <div class="logo">
+                <span class="material-icons" style="
+            font-size: 50px;
+            display: block;
+            padding: 0 !important;
+            margin: 0 !important;
+            "> book
+                </span>
+            </div>
+            <div class="title">
+                Online Book Store
+            </div>
+        </div>
+        <div class="contents">
+            <form id="form1"  name="form" onsubmit="return signup()" method="post">
+                <div class="inputs-holder">
+                    <input id="user" name="uname" type="text" placeholder="Username" required>
+                    <input id="mail" class="email" name="umail" type="email" placeholder="Email" required>
+                    <input id="pass" class="password" name="upass" type="password" placeholder="Password" required>
+                </div>
+                <input onclick="signup" type="submit" id="btn" value="Sign up">
+                </form>
+<p><a href="C:\Users\krishan sorout\AppData\Local\atom\app-1.53.0\LOGIN.html">Sign in</a></p>
+<a href="C:\Users\krishan sorout\AppData\Local\atom\app-1.53.0\t2.html">forgot password</a>
+
+    </div>
+</body>
+<a href="C:\Users\krishan sorout\AppData\Local\atom\app-1.53.0\t3.html">Admin</a><br>
+</html>
