@@ -1,5 +1,5 @@
 # miniproject
-Cloud EBook website
+EBook website
 Synopsis
 Report
 Priyansh Agrawal(181500510)
