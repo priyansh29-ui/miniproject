@@ -258,7 +258,7 @@ sweetalert2("welcome" + window.localStorage.getItem("name"));
 
     <script>
         function load(){
-            swal.fire("hover on the card ! \n Thankyou ")
+            swal.fire(window.localStorage.getItem("name")+"hover on the card ! \n Thankyou ")
         }
     </script>
 
