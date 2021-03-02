@@ -7,7 +7,7 @@ function signin() {
   var name= document.forms["form"]["uname"].value;
   var pass= document.forms["form"]["pass"].value;
   if(name==window.localStorage.getItem("name") && pass===window.localStorage.getItem("password")){
-    alert("Welcome "+window.localStorage.getItem("name"))
+    alert(<h3> "Welcome "+window.localStorage.getItem("name") </h3>)
     window.open("https://priyanshagrawal29.github.io/miniproject/main page.html")
   }
  else{
